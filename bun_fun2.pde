@@ -16,5 +16,5 @@ void draw(){
   background(100);
   bun.update();
   amogus.update();
-  banana.update()
+  banana.update();
 }
