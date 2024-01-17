@@ -14,7 +14,7 @@ class Bun {
     angle = 0;
     angularVelocity = 0.1;
 
-    img = loadImage("images/kanelbulle.png");
+    img = loadImage("images/amongus.jpg");
     img.resize(50,0);
   }
 
