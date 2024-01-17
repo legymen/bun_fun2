@@ -3,6 +3,7 @@ Cupcake cupcake;
 Fish fish;
 Amogus amogus;
 Banana banana;
+watamelon watamelon;
 
 float GRAVITY = 0.3;
 float WINDSPEED = 0;
@@ -14,6 +15,7 @@ void setup(){
   fish = new Fish();
   amogus = new Amogus();
   banana = new Banana();
+  watamelon = new watamelon();
 }
 
 void draw(){
@@ -23,4 +25,5 @@ void draw(){
   fish.update();
   amogus.update();
   banana.update();
+  watamelon.update();
 }
