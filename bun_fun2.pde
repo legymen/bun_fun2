@@ -1,5 +1,6 @@
 Arvid arvid;
 Bun bun;
+Harold harold;
 Cupcake cupcake;
 Fish fish;
 Amogus amogus;
@@ -14,6 +15,7 @@ void setup(){
   size(900, 900);
   arvid = new Arvid();
   bun = new Bun();
+  harold = new Harold();
   cupcake = new Cupcake();
   fish = new Fish();
   amogus = new Amogus();
@@ -26,6 +28,7 @@ void draw(){
   background(100);
   arvid.update();
   bun.update();
+  harold.update();
   cupcake.update();
   fish.update();
   amogus.update();
