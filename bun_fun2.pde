@@ -3,6 +3,7 @@ Cupcake cupcake;
 Fish fish;
 Amogus amogus;
 Banana banana;
+Angry_Bird angry_bird;
 watamelon watamelon;
 
 float GRAVITY = 0.3;
@@ -15,6 +16,7 @@ void setup(){
   fish = new Fish();
   amogus = new Amogus();
   banana = new Banana();
+  angry_bird = new Angry_Bird();
   watamelon = new watamelon();
 }
 
@@ -25,5 +27,6 @@ void draw(){
   fish.update();
   amogus.update();
   banana.update();
+  angry_bird.update();
   watamelon.update();
 }
