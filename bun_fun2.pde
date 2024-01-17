@@ -1,3 +1,4 @@
+Arvid arvid;
 Bun bun;
 Cupcake cupcake;
 Fish fish;
@@ -11,6 +12,7 @@ float WINDSPEED = 0;
 
 void setup(){
   size(900, 900);
+  arvid = new Arvid();
   bun = new Bun();
   cupcake = new Cupcake();
   fish = new Fish();
@@ -22,6 +24,7 @@ void setup(){
 
 void draw(){
   background(100);
+  arvid.update();
   bun.update();
   cupcake.update();
   fish.update();
