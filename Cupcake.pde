@@ -1,21 +1,21 @@
-class Banana {
+class Cupcake {
 
   float xPos, yPos, xSpeed, ySpeed, yAcceleration, xAcceleration, angle, angularVelocity;
 
   PImage img;
 
-  Banana() {
+  Cupcake() {
     xPos = random(50, width - 50);
     yPos = random(50, height - 50);
     xSpeed = 2;
-    ySpeed = -5;
+    ySpeed = -10;
     yAcceleration = GRAVITY;
     xAcceleration = WINDSPEED;
     angle = 0;
     angularVelocity = 0.1;
 
-    img = loadImage("images/Banana.png");
-    img.resize(50, 0);
+    img = loadImage("images/Cupcake-PNG-Images.png");
+    img.resize(50,0);
   }
 
   void update() {
@@ -37,15 +37,11 @@ class Banana {
       xSpeed = xSpeed*(-1);
     }
 
-    if (yPos > height - 25) {
-      ySpeed = ySpeed*(-0.9);
-      yPos = height - 25;
-    }
-    if (yPos < 25) {
-      ySpeed = ySpeed*(-0.9);
-      yPos = 25;
+    if (yPos > height - 25 || yPos < 0 + 25) {
+      ySpeed = ySpeed*(-1);
     }
   }
+
 
   void render() {
     imageMode(CENTER);
