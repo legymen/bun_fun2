@@ -15,7 +15,7 @@ class Banana {
     angularVelocity = 0.1;
 
     img = loadImage("images/Banana.png");
-    img.resize(50,0);
+    img.resize(50, 0);
   }
 
   void update() {
@@ -41,7 +41,7 @@ class Banana {
       ySpeed = ySpeed*(-0.9);
       yPos = height - 25;
     }
-    if(yPos < 25){
+    if (yPos < 25) {
       ySpeed = ySpeed*(-0.9);
       yPos = 25;
     }
