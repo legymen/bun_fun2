@@ -1,10 +1,10 @@
-class Bun {
+class Fish {
 
   float xPos, yPos, xSpeed, ySpeed, yAcceleration, xAcceleration, angle, angularVelocity;
 
   PImage img;
 
-  Bun() {
+  Fish() {
     xPos = random(50, width - 50);
     yPos = random(50, height - 50);
     xSpeed = 2;
@@ -14,7 +14,7 @@ class Bun {
     angle = 0;
     angularVelocity = 0.1;
 
-    img = loadImage("images/kanelbulle.png");
+    img = loadImage("images/fish2.jpg");
     img.resize(50,0);
   }
 
